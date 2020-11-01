@@ -1,0 +1,107 @@
+/* colors */
+
+:root {
+    --header-color: rgb(72, 72, 124);
+    --header-transparent-color: rgba(72, 72, 124, 0.9);
+    --hover-color: yellow;
+    --font-color: #444;
+    --inverse-font-color: white;
+    --alert-color: rgb(250, 60, 0);
+}
+
+/* global styles */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 18px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--font-color);
+}
+
+header {
+    font-size: 40px;
+    color: var(--inverse-font-color);
+    background-color: var(--header-color);
+    padding: 30px 0px;
+    text-align: center;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+main {
+    text-align: justify;
+    padding: 0px 10px;
+}
+
+/* status */
+
+#status {
+    font-size: 20px;
+    color: var(--alert-color);
+    font-weight: bold;
+    text-align: center;
+    padding: 40px 0px;
+}
+
+/* hamburger */
+
+.hamburger {
+    position: fixed;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--header-transparent-color);
+    transition: background-color 300ms ease-in-out;
+    border-radius: 0px 0px 3px 3px;
+    z-index: 2;
+}
+
+.hamburger:hover {
+    background-color: var(--header-color);
+    cursor: pointer;
+}
+
+.hamburger:hover .slice {
+    background-color: var(--hover-color);
+}
+
+.hamburger .slice {
+    width: 22px;
+    height: 3px;
+    background-color: var(--inverse-font-color);
+    margin: 2.5px 0px;
+    border-radius: 5px;
+    transition: background-color 300ms ease-in-out;
+}
+
+/* menu */
+
+.menu {
+    background-color: var(--header-color);
+    display: none;
+    position: fixed;
+    padding-top: 35px;
+    z-index: 1;
+    width: 140px;
+    box-shadow: 1px 1px 6px #222;
+}
+
+.menuItem {
+    color: var(--inverse-font-color);
+    margin: 5px;
+}
+
+.menuItem:hover {
+    cursor: pointer;
+    color: var(--hover-color);
+}
