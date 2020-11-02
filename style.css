@@ -106,12 +106,12 @@ main {
     z-index: 1;
     width: 140px;
     box-shadow: 1px 1px 6px #222;
-    transform: translateX(-110%);
+    transform: translateY(-110%);
     transition: all 250ms ease-in-out;
 }
 
 .menuOpen {
-    transform: translateX(0) !important;
+    transform: translateY(0) !important;
 }
 
 .menuItem {
