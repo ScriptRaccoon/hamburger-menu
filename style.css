@@ -37,17 +37,14 @@ header {
 
 main {
     text-align: justify;
-    padding: 0px 10px;
+    padding: 20px 0px;
 }
 
-/* status */
+/* section */
 
-#status {
-    font-size: 20px;
-    color: var(--alert-color);
-    font-weight: bold;
+section h1 {
     text-align: center;
-    padding: 40px 0px;
+    padding: 40px 0px 20px 0px;
 }
 
 /* hamburger */
@@ -107,7 +104,7 @@ main {
     width: 140px;
     box-shadow: 1px 1px 6px #222;
     transform: translateY(-110%);
-    transition: all 250ms ease-in-out;
+    transition: all 400ms ease-in-out;
 }
 
 .menuOpen {
