@@ -1,7 +1,5 @@
 $(".hamburger").click(toggleMenu);
 
-$("#status").text("Try out the hamburger menu");
-
 function toggleMenu() {
     $(".menu").toggleClass("menuOpen");
     $(".hamburger").toggleClass("cross");
