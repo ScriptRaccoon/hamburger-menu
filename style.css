@@ -100,7 +100,7 @@ section h1 {
     position: fixed;
     padding-top: 35px;
     z-index: 1;
-    width: 140px;
+    width: 160px;
     box-shadow: 1px 1px 6px #222;
     transform: translateY(-110%);
     transition: all 400ms ease-in-out;
